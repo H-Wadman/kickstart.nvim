@@ -12,6 +12,13 @@ vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<CR>')
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
+vim.keymap.set('n', '<leader>lf',
+      function()
+        vim.diagnostic.open_float { border = "rounded" }
+      end,
+    { desc = "Floating LSP Diagnostic"}
+)
+
 -- Test, don't interfere with iterm2 splits
 -- vim.keymap.del('n', '<D-S><Enter>')
 
