@@ -16,7 +16,7 @@ vim.keymap.set('n', '<leader>lf',
       function()
         vim.diagnostic.open_float { border = "rounded" }
       end,
-    { desc = "Floating LSP Diagnostic"}
+    { desc = "[L]SP [F]loating Diagnostic"}
 )
 
 -- Test, don't interfere with iterm2 splits
