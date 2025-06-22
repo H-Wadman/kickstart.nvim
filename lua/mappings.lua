@@ -9,15 +9,16 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<Tab>', '<cmd>bnext<CR>')
 vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<CR>')
 
+-- vim.keymap.set('i', '<Tab>', function()
+--   return vim.fn.pumvisible() == 0 and '<Tab>' or 'C-y'
+-- end, { expr = true })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
-vim.keymap.set('n', '<leader>lf',
-      function()
-        vim.diagnostic.open_float { border = "rounded" }
-      end,
-    { desc = "[L]SP [F]loating Diagnostic"}
-)
+vim.keymap.set('n', '<leader>lf', function()
+  vim.diagnostic.open_float { border = 'rounded' }
+end, { desc = '[L]SP [F]loating Diagnostic' })
 
 -- Test, don't interfere with iterm2 splits
 -- vim.keymap.del('n', '<D-S><Enter>')
