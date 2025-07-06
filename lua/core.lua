@@ -61,6 +61,10 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = 'split'
 
+vim.api.nvim_set_option_value('shiftwidth', 4, {})
+vim.api.nvim_set_option_value('tabstop', 4, {})
+vim.api.nvim_set_option_value('expandtab', true, {})
+
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
