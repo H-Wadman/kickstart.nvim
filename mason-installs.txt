@@ -2,3 +2,5 @@ black
 isort
 prettierd
 markdownlint
+vale
+shellcheck
