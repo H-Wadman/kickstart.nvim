@@ -4,3 +4,4 @@ prettierd
 markdownlint
 vale
 shellcheck
+hadolint
